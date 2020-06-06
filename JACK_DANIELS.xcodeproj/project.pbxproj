@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		0FF9B9A2248BE77100D8423C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B99F248BE77100D8423C /* Images.swift */; };
 		0FF9B9A3248BE77100D8423C /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B9A0248BE77100D8423C /* UIColor+extensions.swift */; };
 		0FF9B9A4248BE77100D8423C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B9A1248BE77100D8423C /* Colors.swift */; };
+		0FF9B9A6248C01CE00D8423C /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B9A5248C01CE00D8423C /* ExtensionUIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0FF9B99F248BE77100D8423C /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		0FF9B9A0248BE77100D8423C /* UIColor+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		0FF9B9A1248BE77100D8423C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0FF9B9A5248C01CE00D8423C /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
 		484091775871897A3FCC88ED /* Pods-JACK_DANIELS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JACK_DANIELS.release.xcconfig"; path = "Target Support Files/Pods-JACK_DANIELS/Pods-JACK_DANIELS.release.xcconfig"; sourceTree = "<group>"; };
 		F529AB0B1D1FCD28274EE269 /* Pods-JACK_DANIELS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JACK_DANIELS.debug.xcconfig"; path = "Target Support Files/Pods-JACK_DANIELS/Pods-JACK_DANIELS.debug.xcconfig"; sourceTree = "<group>"; };
 		FBE18B28A3DCE4F42F9CB553 /* Pods_JACK_DANIELS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JACK_DANIELS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +54,6 @@
 				F529AB0B1D1FCD28274EE269 /* Pods-JACK_DANIELS.debug.xcconfig */,
 				484091775871897A3FCC88ED /* Pods-JACK_DANIELS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 				0FF9B9A1248BE77100D8423C /* Colors.swift */,
 				0FF9B99F248BE77100D8423C /* Images.swift */,
 				0FF9B9A0248BE77100D8423C /* UIColor+extensions.swift */,
+				0FF9B9A5248C01CE00D8423C /* ExtensionUIImageView.swift */,
 				0FF9B992248BE48F00D8423C /* Assets.xcassets */,
 				0FF9B994248BE48F00D8423C /* LaunchScreen.storyboard */,
 				0FF9B997248BE48F00D8423C /* Info.plist */,
@@ -214,6 +216,7 @@
 			files = (
 				0FF9B99E248BE53200D8423C /* JackLogoViewController.swift in Sources */,
 				0FF9B98E248BE48A00D8423C /* ViewController.swift in Sources */,
+				0FF9B9A6248C01CE00D8423C /* ExtensionUIImageView.swift in Sources */,
 				0FF9B9A2248BE77100D8423C /* Images.swift in Sources */,
 				0FF9B9A4248BE77100D8423C /* Colors.swift in Sources */,
 				0FF9B98A248BE48A00D8423C /* AppDelegate.swift in Sources */,

@@ -11,10 +11,16 @@ import SnapKit
 
 class JackLogoViewController: UIViewController {
     
-    let logoImageView = UIImageView(image: .logo)
+    lazy var logoImageView: UIImageView = {
+        let view = UIImageView(image: .logo)
+        view.setImageColor(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        return view
+    }()
     
     override func loadView() {
         super.loadView()
+        
+        navigationController?.navigationBar.isHidden = true
     
         view.backgroundColor = .black
         view.addSubview(logoImageView)
@@ -24,10 +30,10 @@ class JackLogoViewController: UIViewController {
         super.viewDidLoad()
         
         logoImageView.snp.makeConstraints({ item in
-            item.height.equalTo(128)
-            item.width.equalTo(240)
-            item.centerX.equalToSuperview()
-            item.centerY.equalToSuperview()
+            item.height.equalTo(164)
+            item.left.equalToSuperview().offset(40)
+            item.right.equalToSuperview().offset(-40)
+            item.center.equalToSuperview()
         })
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     
-    static let logo = UIImage(imageLiteralResourceName: "Portada")
-
+ //   static let logo = UIImage(imageLiteralResourceName: "Portada")
+    static let logo = UIImage(imageLiteralResourceName: "jd_logo")
 }
 
