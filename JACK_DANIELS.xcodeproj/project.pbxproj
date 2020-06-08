@@ -65,14 +65,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		0F313DBD248EAB92006DF66A /* Extension */ = {
+		0F313DBD248EAB92006DF66A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0FF9B9A0248BE77100D8423C /* UIColor+extensions.swift */,
 				0FF9B9A5248C01CE00D8423C /* ExtensionUIImageView.swift */,
 				0F313DBB248EAAFF006DF66A /* ExtensionUILabel.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0FF9B97D248BE48A00D8423C = {
@@ -104,7 +104,7 @@
 				0F313DB9248E5900006DF66A /* JackOldView.swift */,
 				0FF9B9A1248BE77100D8423C /* Colors.swift */,
 				0FF9B99F248BE77100D8423C /* Images.swift */,
-				0F313DBD248EAB92006DF66A /* Extension */,
+				0F313DBD248EAB92006DF66A /* Extensions */,
 				0FF9B992248BE48F00D8423C /* Assets.xcassets */,
 				0FF9B994248BE48F00D8423C /* LaunchScreen.storyboard */,
 				0FF9B997248BE48F00D8423C /* Info.plist */,
