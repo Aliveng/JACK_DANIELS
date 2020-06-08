@@ -10,7 +10,11 @@ import UIKit
 
 extension UIImage {
     
- //   static let logo = UIImage(imageLiteralResourceName: "Portada")
     static let logo = UIImage(imageLiteralResourceName: "jd_logo")
+    static let gentelmanJack = UIImage(imageLiteralResourceName: "gentlemanJack")
+    static let jackDanielsOld = UIImage(imageLiteralResourceName: "jd")
+    static let singleBarrel = UIImage(imageLiteralResourceName: "singleBarrel")
+    static let backArrow = UIImage(imageLiteralResourceName: "back")
+    static let heart = UIImage(imageLiteralResourceName: "like")
 }
 

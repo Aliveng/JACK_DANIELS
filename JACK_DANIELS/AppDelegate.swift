@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow()
         self.window = window
         
-        window.rootViewController = UINavigationController(rootViewController: JackLogoViewController())
+        window.rootViewController = UINavigationController(rootViewController: GentlemanViewController())
         window.makeKeyAndVisible()
 
         return true
