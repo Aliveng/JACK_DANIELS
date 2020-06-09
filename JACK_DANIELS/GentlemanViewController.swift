@@ -34,7 +34,7 @@ class GentlemanViewController: UIViewController {
         view.tintColor = .grayJack
         view.backgroundColor = .yellowJack
         view.addTarget(self,
-                       action: #selector(didTaHeart),
+                       action: #selector(didTapHeart),
                        for: .touchUpInside)
         return view
     }()
@@ -45,20 +45,20 @@ class GentlemanViewController: UIViewController {
         return view
     }()
     
-    lazy var buyButton: UIButton = {
-        let view = UIButton()
-        view.backgroundColor = .yellowJack
-        view.layer.borderColor = UIColor.black.cgColor
-        view.layer.borderWidth = 1
-        view.layer.cornerRadius = 18
-        view.setTitle("BUY NOW", for: .normal)
-        view.titleLabel?.font = .boldSystemFont(ofSize: 12)
-        view.setTitleColor( .black, for: .normal)
-        view.addTarget(self,
-                       action: #selector(didTaHeart),
-                       for: .touchUpInside)
-        return view
-    }()
+//    lazy var buyButton: UIButton = {
+//        let view = UIButton()
+//        view.backgroundColor = .yellowJack
+//        view.layer.borderColor = UIColor.black.cgColor
+//        view.layer.borderWidth = 1
+//        view.layer.cornerRadius = 18
+//        view.setTitle("BUY NOW", for: .normal)
+//        view.titleLabel?.font = .boldSystemFont(ofSize: 12)
+//        view.setTitleColor( .black, for: .normal)
+//        view.addTarget(self,
+//                       action: #selector(didTaHeart),
+//                       for: .touchUpInside)
+//        return view
+//    }()
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -74,7 +74,7 @@ class GentlemanViewController: UIViewController {
         view.addSubview(arrowBackButton)
         view.addSubview(heartButton)
         view.addSubview(jackCardView)
-        view.addSubview(buyButton)
+//        view.addSubview(buyButton)
     }
     
     override func viewDidLoad() {
@@ -108,16 +108,16 @@ class GentlemanViewController: UIViewController {
             item.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(50)
         })
         
-        buyButton.snp.makeConstraints({ item in
-            item.height.equalTo(35)
-            item.width.equalTo(145)
-            item.centerX.equalToSuperview()
-            item.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-70)
-        })
+//        buyButton.snp.makeConstraints({ item in
+//            item.height.equalTo(35)
+//            item.width.equalTo(145)
+//            item.centerX.equalToSuperview()
+//            item.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-70)
+//        })
     }
     
     @objc
-    private func didTaHeart() {
+    private func didTapHeart() {
         print("Понравился")
     }
     

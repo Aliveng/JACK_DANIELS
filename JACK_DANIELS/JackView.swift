@@ -52,7 +52,8 @@ class JackView: UIView {
         addSubview(jackOldCardView)
         
         jackOldCardView.snp.makeConstraints({ item in
-            item.height.equalTo(700)
+           // item.height.equalTo(700)
+            item.height.equalToSuperview()
             item.width.equalToSuperview()
             item.centerX.equalToSuperview()
             item.top.equalToSuperview()
