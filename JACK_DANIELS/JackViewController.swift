@@ -9,7 +9,9 @@
 import UIKit
 import SnapKit
 
-class GentlemanViewController: UIViewController {
+class JackViewController: UIViewController {
+    
+    weak var pageIndex: Observable <Int>!
     
     lazy var logoImageView: UIImageView = {
         let view = UIImageView(image: .logo)
@@ -45,23 +47,23 @@ class GentlemanViewController: UIViewController {
         return view
     }()
     
-//    lazy var buyButton: UIButton = {
-//        let view = UIButton()
-//        view.backgroundColor = .yellowJack
-//        view.layer.borderColor = UIColor.black.cgColor
-//        view.layer.borderWidth = 1
-//        view.layer.cornerRadius = 18
-//        view.setTitle("BUY NOW", for: .normal)
-//        view.titleLabel?.font = .boldSystemFont(ofSize: 12)
-//        view.setTitleColor( .black, for: .normal)
-//        view.addTarget(self,
-//                       action: #selector(didTaHeart),
-//                       for: .touchUpInside)
-//        return view
-//    }()
+    enum СolorOfTopBar {
+        case grayJack
+        case yellowJack
+    }
     
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    init(pageIndex: Observable <Int>) {
+        self.pageIndex = pageIndex
+        super.init(nibName: nil, bundle: nil)
+        jackCardView.pageIndex = pageIndex
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func loadView() {
@@ -74,7 +76,6 @@ class GentlemanViewController: UIViewController {
         view.addSubview(arrowBackButton)
         view.addSubview(heartButton)
         view.addSubview(jackCardView)
-//        view.addSubview(buyButton)
     }
     
     override func viewDidLoad() {
@@ -108,12 +109,35 @@ class GentlemanViewController: UIViewController {
             item.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(50)
         })
         
-//        buyButton.snp.makeConstraints({ item in
-//            item.height.equalTo(35)
-//            item.width.equalTo(145)
-//            item.centerX.equalToSuperview()
-//            item.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-70)
-//        })
+        pageIndex.subscribe({ index in
+            print("🥺 \(index)")
+            
+            switch index{
+            case 0:
+                self.view.backgroundColor = .grayJack
+                self.arrowBackButton.tintColor = .yellowJack
+                self.arrowBackButton.backgroundColor = .grayJack
+                self.heartButton.tintColor = .yellowJack
+                self.heartButton.backgroundColor = .grayJack
+                self.logoImageView.tintColor = .white
+            case 1:
+                self.view.backgroundColor = .yellowJack
+                self.arrowBackButton.tintColor = .black
+                self.arrowBackButton.backgroundColor = .yellowJack
+                self.heartButton.tintColor = .black
+                self.heartButton.backgroundColor = .yellowJack
+                self.logoImageView.tintColor = .black
+            case 2:
+                self.view.backgroundColor = .grayJack
+                self.arrowBackButton.tintColor = .yellowJack
+                self.arrowBackButton.backgroundColor = .grayJack
+                self.heartButton.tintColor = .yellowJack
+                self.heartButton.backgroundColor = .grayJack
+                self.logoImageView.tintColor = .white
+            default:
+                ()
+            }
+        })
     }
     
     @objc
@@ -125,6 +149,4 @@ class GentlemanViewController: UIViewController {
     private func didTapArrowBack() {
         navigationController?.popViewController(animated: true)
     }
-    
 }
-

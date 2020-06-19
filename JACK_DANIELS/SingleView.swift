@@ -1,8 +1,8 @@
 //
-//  RoomsOnFloorView.swift
-//  FloorsView
+//  SingleView.swift
+//  JACK_DANIELS
 //
-//  Created by Татьяна Севостьянова on 23.03.2020.
+//  Created by Татьяна Севостьянова on 19.06.2020.
 //  Copyright © 2020 Татьяна Севостьянова. All rights reserved.
 //
 
@@ -10,12 +10,12 @@ import UIKit
 import SnapKit
 
 
-class JackOldView: UIView {
+class SingleView: UIView {
     
     lazy var costLabel: UILabel = {
         let view = UILabel()
-        view.text = "$539"
-        view.textColor = .black
+        view.text = "$825"
+        view.textColor = .yellowJack
         view.font = .boldSystemFont(ofSize: 16)
         view.textAlignment = .left
         return view
@@ -23,8 +23,8 @@ class JackOldView: UIView {
     
     lazy var nameLabel: UILabel = {
         let view = UILabel()
-        view.text = "JACK DANIEL’S OLD N0.7"
-        view.textColor = .black
+        view.text = "SINGLE BARREL"
+        view.textColor = .white
         view.font = view.font.withSize(24)
         view.textAlignment = .left
         view.numberOfLines = 0
@@ -33,8 +33,8 @@ class JackOldView: UIView {
     
     lazy var descriptionLabel: UILabel = {
         let view = UILabel()
-        view.text = "We do things a little differently around here – and that’s what gives Jack Daniel’s its distinctive character. We charcoal mellow our whiskey drop by drop, then let it age in our own handcrafted barrels. And we don’t follow a calendar."
-        view.textColor = .black
+        view.text = "We hold ourselves to the highest standard when crafting and selecting Jack Daniel’s Single Barrel. In fact, just one out of every 100 barrels is set aside to mature in the highest reaches of our barrelhouses."
+        view.textColor = .white
         view.font = view.font.withSize(12)
         view.textAlignment = .left
         view.numberOfLines = 0
@@ -44,8 +44,8 @@ class JackOldView: UIView {
     
     lazy var backLabel: UILabel = {
         let view = UILabel()
-        view.text = "JACK DANIEL’S WHISKE"
-        view.textColor = #colorLiteral(red: 0.8565072417, green: 0.6234254837, blue: 0.001795589807, alpha: 1)
+        view.text = "SINGLE"
+        view.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         view.font = .boldSystemFont(ofSize: 147)
         view.textAlignment = .left
         view.numberOfLines = 1
@@ -55,26 +55,26 @@ class JackOldView: UIView {
     lazy var unchangedLabel: UILabel = {
         let view = UILabel()
         view.text = "JACK DANIEL’S WHISKE"
-        view.textColor = .white
+        view.textColor = .grayForLabel
         view.font = .boldSystemFont(ofSize: 10)
         view.textAlignment = .left
         return view
     }()
     
     lazy var bottleImageView: UIImageView = {
-        let view = UIImageView(image: .jackDanielsOld)
+        let view = UIImageView(image: .singleBarrel)
         return view
     }()
     
     lazy var buyButton: UIButton = {
         let view = UIButton()
-        view.backgroundColor = .yellowJack
-        view.layer.borderColor = UIColor.black.cgColor
+        view.backgroundColor = .grayJack
+        view.layer.borderColor = UIColor.yellowJack.cgColor
         view.layer.borderWidth = 1
         view.layer.cornerRadius = 18
         view.setTitle("BUY NOW", for: .normal)
         view.titleLabel?.font = .boldSystemFont(ofSize: 12)
-        view.setTitleColor( .black, for: .normal)
+        view.setTitleColor( .yellowJack, for: .normal)
         view.addTarget(self,
                        action: #selector(didTapHearBuy),
                        for: .touchUpInside)
@@ -83,9 +83,9 @@ class JackOldView: UIView {
     
     lazy var pageControlView: UIPageControl = {
         let view = UIPageControl()
-        view.pointOneView.backgroundColor = #colorLiteral(red: 0.8862358928, green: 0.7452564836, blue: 0.3547067344, alpha: 1)
-        view.pointTwoView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        view.pointThreeView.backgroundColor = #colorLiteral(red: 0.8862358928, green: 0.7452564836, blue: 0.3547067344, alpha: 1)
+        view.pointOneView.backgroundColor = #colorLiteral(red: 0.396032095, green: 0.3961050212, blue: 0.3960274756, alpha: 1)
+        view.pointTwoView.backgroundColor = #colorLiteral(red: 0.396032095, green: 0.3961050212, blue: 0.3960274756, alpha: 1)
+        view.pointThreeView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         return view
     }()
     
@@ -151,6 +151,7 @@ class JackOldView: UIView {
             item.centerX.equalToSuperview()
             item.top.equalTo(buyButton.snp.bottom).offset(10)
         })
+        
     }
     
     required init?(coder: NSCoder) {

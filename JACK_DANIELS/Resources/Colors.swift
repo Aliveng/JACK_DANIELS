@@ -12,4 +12,5 @@ extension UIColor {
     
     static let grayJack = UIColor(hex: "#323232")
     static let yellowJack = UIColor(hex: "#FFBA00")
+    static let grayForLabel = UIColor(hex: "#AEAEAE")
 }

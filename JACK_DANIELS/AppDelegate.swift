@@ -10,18 +10,18 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
     
-
+    var window: UIWindow?
+    var pageIndex: Observable <Int> = .init(1)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let window = UIWindow()
         self.window = window
         
-        window.rootViewController = UINavigationController(rootViewController: GentlemanViewController())
+        window.rootViewController = UINavigationController(rootViewController: JackViewController(pageIndex: pageIndex))
         window.makeKeyAndVisible()
-
+        
         return true
     }
 }

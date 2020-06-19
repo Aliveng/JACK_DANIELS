@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0C605E5C8F72EB291ACDF668 /* Pods_JACK_DANIELS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE18B28A3DCE4F42F9CB553 /* Pods_JACK_DANIELS.framework */; };
+		0F275961249CFF71002060CA /* SingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F275960249CFF71002060CA /* SingleView.swift */; };
+		0F275965249D30C4002060CA /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F275964249D30C4002060CA /* Observable.swift */; };
 		0F2966A6248F6BD300325A05 /* UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2966A5248F6BD300325A05 /* UIPageControl.swift */; };
-		0F313DB6248E4591006DF66A /* DesignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F313DB5248E4591006DF66A /* DesignableViewController.swift */; };
 		0F313DB8248E5742006DF66A /* JackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F313DB7248E5742006DF66A /* JackView.swift */; };
 		0F313DBA248E5900006DF66A /* JackOldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F313DB9248E5900006DF66A /* JackOldView.swift */; };
 		0F313DBC248EAAFF006DF66A /* ExtensionUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F313DBB248EAAFF006DF66A /* ExtensionUILabel.swift */; };
+		0F3E36BE248FE82800FAFCDB /* GentlemanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E36BD248FE82800FAFCDB /* GentlemanView.swift */; };
 		0FF9B98A248BE48A00D8423C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B989248BE48A00D8423C /* AppDelegate.swift */; };
-		0FF9B98E248BE48A00D8423C /* GentlemanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B98D248BE48A00D8423C /* GentlemanViewController.swift */; };
+		0FF9B98E248BE48A00D8423C /* JackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B98D248BE48A00D8423C /* JackViewController.swift */; };
 		0FF9B993248BE48F00D8423C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9B992248BE48F00D8423C /* Assets.xcassets */; };
 		0FF9B996248BE48F00D8423C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9B994248BE48F00D8423C /* LaunchScreen.storyboard */; };
 		0FF9B99E248BE53200D8423C /* JackLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9B99D248BE53200D8423C /* JackLogoViewController.swift */; };
@@ -25,14 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F275960249CFF71002060CA /* SingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleView.swift; sourceTree = "<group>"; };
+		0F275964249D30C4002060CA /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		0F2966A5248F6BD300325A05 /* UIPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControl.swift; sourceTree = "<group>"; };
-		0F313DB5248E4591006DF66A /* DesignableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableViewController.swift; sourceTree = "<group>"; };
 		0F313DB7248E5742006DF66A /* JackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackView.swift; sourceTree = "<group>"; };
 		0F313DB9248E5900006DF66A /* JackOldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JackOldView.swift; sourceTree = "<group>"; };
 		0F313DBB248EAAFF006DF66A /* ExtensionUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUILabel.swift; sourceTree = "<group>"; };
+		0F3E36BD248FE82800FAFCDB /* GentlemanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentlemanView.swift; sourceTree = "<group>"; };
 		0FF9B986248BE48A00D8423C /* JACK_DANIELS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JACK_DANIELS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF9B989248BE48A00D8423C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FF9B98D248BE48A00D8423C /* GentlemanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GentlemanViewController.swift; sourceTree = "<group>"; };
+		0FF9B98D248BE48A00D8423C /* JackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackViewController.swift; sourceTree = "<group>"; };
 		0FF9B992248BE48F00D8423C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FF9B995248BE48F00D8423C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FF9B997248BE48F00D8423C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,12 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				0FF9B989248BE48A00D8423C /* AppDelegate.swift */,
-				0F313DB5248E4591006DF66A /* DesignableViewController.swift */,
 				0FF9B99D248BE53200D8423C /* JackLogoViewController.swift */,
-				0FF9B98D248BE48A00D8423C /* GentlemanViewController.swift */,
+				0FF9B98D248BE48A00D8423C /* JackViewController.swift */,
 				0F313DB7248E5742006DF66A /* JackView.swift */,
 				0F313DB9248E5900006DF66A /* JackOldView.swift */,
+				0F3E36BD248FE82800FAFCDB /* GentlemanView.swift */,
+				0F275960249CFF71002060CA /* SingleView.swift */,
 				0F2966A5248F6BD300325A05 /* UIPageControl.swift */,
+				0F275964249D30C4002060CA /* Observable.swift */,
 				0F2966A7248F6BF600325A05 /* Resources */,
 				0F313DBD248EAB92006DF66A /* Extensions */,
 				0FF9B992248BE48F00D8423C /* Assets.xcassets */,
@@ -246,16 +252,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF9B99E248BE53200D8423C /* JackLogoViewController.swift in Sources */,
-				0FF9B98E248BE48A00D8423C /* GentlemanViewController.swift in Sources */,
+				0FF9B98E248BE48A00D8423C /* JackViewController.swift in Sources */,
 				0F313DBA248E5900006DF66A /* JackOldView.swift in Sources */,
 				0FF9B9A6248C01CE00D8423C /* ExtensionUIImageView.swift in Sources */,
 				0F313DBC248EAAFF006DF66A /* ExtensionUILabel.swift in Sources */,
 				0FF9B9A2248BE77100D8423C /* Images.swift in Sources */,
 				0F2966A6248F6BD300325A05 /* UIPageControl.swift in Sources */,
+				0F3E36BE248FE82800FAFCDB /* GentlemanView.swift in Sources */,
 				0F313DB8248E5742006DF66A /* JackView.swift in Sources */,
 				0FF9B9A4248BE77100D8423C /* Colors.swift in Sources */,
+				0F275965249D30C4002060CA /* Observable.swift in Sources */,
 				0FF9B98A248BE48A00D8423C /* AppDelegate.swift in Sources */,
-				0F313DB6248E4591006DF66A /* DesignableViewController.swift in Sources */,
+				0F275961249CFF71002060CA /* SingleView.swift in Sources */,
 				0FF9B9A3248BE77100D8423C /* UIColor+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

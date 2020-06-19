@@ -21,7 +21,7 @@ class JackLogoViewController: UIViewController {
         super.loadView()
         
         navigationController?.navigationBar.isHidden = true
-    
+        
         view.backgroundColor = .black
         view.addSubview(logoImageView)
     }
