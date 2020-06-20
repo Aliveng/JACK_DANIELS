@@ -110,7 +110,6 @@ class JackViewController: UIViewController {
         })
         
         pageIndex.subscribe({ index in
-            print("🥺 \(index)")
             
             switch index{
             case 0:

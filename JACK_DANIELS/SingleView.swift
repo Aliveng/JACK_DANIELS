@@ -134,7 +134,7 @@ class SingleView: UIView {
         bottleImageView.snp.makeConstraints({ item in
             item.height.equalTo(320)
             item.width.equalTo(150)
-            item.right.equalToSuperview()
+            item.right.equalToSuperview().offset(-5)
             item.top.equalToSuperview().offset(60)
         })
         

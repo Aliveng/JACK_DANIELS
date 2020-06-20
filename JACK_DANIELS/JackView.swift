@@ -84,7 +84,6 @@ class JackView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     func swipes() {
         
         self.jackView.addGestureRecognizer(swipeRight)
